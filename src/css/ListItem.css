@@ -1,0 +1,135 @@
+.card {
+  background:#fff;
+  box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
+  width:276px;
+  height:276px;
+  display: inline-block;
+  margin: 12px 12px;
+  position: relative;
+}
+
+.card-image {
+  background:#ffffff;
+  width:252px;
+  height:182px;
+  margin: 0 auto;  
+}
+
+
+.card-hover-state {
+  background:#fff;
+  box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
+  width:276px;
+  height:276px;
+  display: inline-block;
+  margin: 12px 12px;
+  bottom: 12px;
+  position: relative;
+}
+
+.card-overlay{
+  background-image:linear-gradient(-180deg, #0ad4fa 0%, rgba(37, 187, 241, 0.85) 100%);
+  width:276px;
+  height:276px;
+  position: absolute;
+  top: 0px;
+  box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+  z-index: 4;
+
+}
+
+.card-overlay button {
+  background:#ffffff;
+  border-radius: 100px;
+  border: 1px;
+  height:42px;
+  padding: 8px 64px 11px 66px;
+  font-size:18px;
+  color:#616161;
+  letter-spacing:-0.04px;
+  text-align:center;
+
+}
+
+.card-overlay button:hover {
+  cursor: pointer;
+}
+
+.overlay-title {
+  font-size:36px;
+  color:#ffffff;
+  letter-spacing:-0.08px;
+  text-align:center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.overlay-title img{
+    vertical-align: middle;
+    padding-bottom: 3px;
+  }
+
+
+
+.overlay-redeemable {
+    position: absolute;
+    background-image:radial-gradient(#0ad4fa 51%, #25bbf1 100%, 50% 130%);
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    right: 12px;
+    top: 12px;
+    z-index: 6;
+}
+
+
+.redeemable {
+  position: absolute;
+  background-image:radial-gradient( #0ad4fa 51%, #25bbf1 100%, 50% 130%,);
+  width:42px;
+  height:42px;
+  border-radius:100%;
+  right: 12px;
+  top: 12px;
+  z-index: 2;
+}
+
+.non-redeemable {
+  position: absolute;
+  opacity:0.8;
+  background:#616161;
+  border-radius:100px;
+  height:42px;
+  z-index: 2;
+  right: 12px;
+  top: 12px;
+  padding: 11px 13px 13px 15px;
+
+}
+
+.non-redeemable .inner {
+  font-size:14px;
+  color:#ffffff;
+  letter-spacing:-0.03px;
+  text-align:right;
+  vertical-align: top;
+
+
+}
+
+.non-redeemable img {
+  vertical-align: middle;
+  padding-bottom: 3px;
+}
+
+
+.divider {
+  background:#d9d9d9;
+  width:228px;
+  height:1px;
+  margin: 1px 24px 19px 24px;
+
+}
+

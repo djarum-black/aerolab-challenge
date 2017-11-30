@@ -1,0 +1,86 @@
+img.logo {
+ 
+  margin-left: 42px;
+}
+
+span.username {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:24px;
+	color:#616161;
+	letter-spacing:-0.15px;
+	line-height:48px;
+	text-align:left;
+	padding-right: 10px;
+}
+
+.navbar {
+	padding-top: 22px;
+	margin: 0px;
+
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)  { 
+  	.navbar {
+  		padding: 0px;
+  		margin: 0px;
+
+
+  	}
+  	.navbar .column {
+  		padding: 0px;
+  	}
+
+  	img.logo {
+  	 margin-left: 0px;
+  	 padding-top: 10px;
+  	 padding-left: 10px;
+  	}
+
+
+  }
+
+
+
+.columns {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.points {
+  background:#ededed;
+  background-image: url("../icons/coin.svg") no-repeat bottom-right;
+  border-radius:100px;
+  height:48px;
+  font-size:24px;
+  color:#616161;
+  letter-spacing:-0.15px;
+  line-height:48px;
+  text-align:left;
+  padding: 10px 20px;
+}
+
+.points img {
+	 margin-bottom: -0.25em;
+
+}
+
+#navbar-user-data{
+  float: right;
+  text-align: right;
+  padding-right: 42px;
+}
+
+
+
+
+.navbar-item {
+  padding: 0px;
+  width: 100px;
+}
+
+.navbar-item img {
+  max-height: 100%
+}

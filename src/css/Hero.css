@@ -1,0 +1,29 @@
+
+.hero {
+ background:#000000;
+ max-width:1440px;
+ height:412px;
+  background: url(../icons/header-x1.png) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero-body {
+  padding: 0;
+}
+h1.title {
+
+  font-size:64px;
+  color:#ffffff;
+  text-align:left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header-title {
+  margin-top: 284px;
+  margin-left: 132px;
+  padding: 0px;
+}

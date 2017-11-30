@@ -1,0 +1,57 @@
+
+/* turuncu : #ff7b00
+
+*/
+
+
+#terminal {
+	background: black;
+	color: #fff;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: 10;
+	padding: 20px;
+	overflow: auto;
+}
+
+#terminal .ugur:before {
+	content: '>>  ';
+	padding-right:10px;
+	color: red;
+
+}
+
+#terminal .user:before {
+	content: '>   ';
+	padding-right:10px;
+
+}
+
+input.commandPrompt {
+	background: #000;
+	border: 0px;
+	color: #00FF00;
+}
+
+input.commandPrompt:focus {
+	outline:0;
+}
+
+
+.important {
+	color: #ff7b00;
+	font-size: 1rem;
+}
+
+.terminal-red {
+	color: red;
+}
+
+.terminal-green {
+	color: #00FF00;
+}
+
