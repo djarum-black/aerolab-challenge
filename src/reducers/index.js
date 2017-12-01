@@ -7,7 +7,8 @@ let dummyItem =  {
       cost: 200,
       category: '▄▄▄▄▄▄▄▄▄',
       img: {
-        url: 'placeholder.jpg'
+        url: 'placeholder.jpg',
+        hdUrl: 'placeholder.jpg'
       }
     }
 

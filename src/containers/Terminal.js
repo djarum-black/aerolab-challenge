@@ -118,7 +118,11 @@ class Terminal extends Component {
 
 
 					this.setState({questionIndex: this.state.questionIndex + 1 })
-					dispatch(API.processCommand("ugur", questions[this.state.questionIndex + 1].question))
+					dispatch(API.processCommand("ugur", questions[this.state.questionIndex].question))
+
+					if(this.state.questionIndex % 10 === 0) {
+						dispatch(API.processCommand("ugur", "you can type <span class=\"terminal-red\">exit</span> if you want to exit the game mode."))
+					}
 
 					return false
 					
@@ -170,7 +174,7 @@ class Terminal extends Component {
 					}
 					case 'game mode' : {
 						dispatch(API.fetchQuestions())
-						dispatch(API.processCommand("ugur",'game mode is <span class="terminal-green">on</span> <br/> type <span class="important">begin</span> to start. correct answers will get you some points. type <span class="important">exit</span> to exit game mode'))
+						dispatch(API.processCommand("ugur",'game mode is <span class="terminal-green">on</span> <br/> type <span class="important">begin</span> to start the game. correct answers will get you points. type <span class="important">exit</span> to exit game mode'))
 						break
 					}
 
@@ -224,6 +228,8 @@ class Terminal extends Component {
 	}
 
 	render() {
+
+		console.log(this.state.questionIndex)
 
 		return (
 			<div id="terminal" className={this.props.showTerminal ? '' : 'is-hidden'}>

@@ -11,7 +11,7 @@
 }
 
 .hero-body {
-  padding: 0;
+  padding:0;
 }
 h1.title {
 
@@ -23,7 +23,32 @@ h1.title {
 }
 
 .header-title {
-  margin-top: 284px;
+  margin-top: 264px;
   margin-left: 132px;
   padding: 0px;
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)  { 
+ .header-title {
+  margin-left: 50px;
+  margin-top: 20px;
+ }
+h1.title {
+  font-size: 32px;
+}
+
+.hero {
+
+  height: 100px;
+}
+
+
+
+
+
+
+
 }

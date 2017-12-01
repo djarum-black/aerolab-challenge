@@ -6,7 +6,6 @@ import * as API from '../actions/'
 
 
 import '../css/ListItem.css'
-
 class ListItem extends Component {
 
 	constructor(props) {

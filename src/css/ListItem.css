@@ -1,7 +1,7 @@
 .card {
   background:#fff;
   box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
-  width:276px;
+  max-width:276px;
   height:276px;
   display: inline-block;
   margin: 12px 12px;
@@ -23,7 +23,7 @@
   height:276px;
   display: inline-block;
   margin: 12px 12px;
-  bottom: 12px;
+  bottom: 5px;
   position: relative;
 }
 
@@ -133,3 +133,29 @@
 
 }
 
+.h-divider {
+  background:#d9d9d9;
+  height: 1px;
+  width: 100%;
+  margin: 24px 0px;
+
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)  { 
+
+
+.card {
+  margin-left: 0;
+
+}
+
+
+ 
+
+
+
+
+}

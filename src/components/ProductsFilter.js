@@ -44,7 +44,7 @@ class ProductsFilter extends Component {
 
 			  	<div className="level-right">
 
-			  		<div className="level-item is-hidden-touch">
+			  		<div className="level-item">
 			  			{
 			  				page > 1 
 			  				? <img  src={arrowLeft}  onClick= {() => that.prevPage()}  alt="previous page"/>

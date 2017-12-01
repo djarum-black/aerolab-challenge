@@ -3,6 +3,7 @@
 
 html, body {
     margin: 0;
+    padding: 0;
     height: 100%;
 }
 
@@ -17,9 +18,18 @@ html, body {
 
 
 @media only screen 
-  and (min-width: 1480px)  {
+  and (min-width: 1281px)  {
    .main-container {
     margin-left: 40px;
+  }
+
+  .item-container {
+  max-width: 1300px;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  text-align: left;
+
   }
 }
 
@@ -29,34 +39,15 @@ html, body {
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 812px)  { 
- .header-title {
-  margin-left: 50px;
-  margin-top: 20px;
- }
-h1.title {
-  font-size: 32px;
-}
-
-.hero {
-
-  height: 100px;
-}
-
-.product-list {
-
-}
-
+ 
 .main-container {
   padding: 0px 0px;
 }
 
-.card {
-  margin-left: 40px;
 
-}
 
 .product-container {
-  padding-left: 00px;
+  padding-left: 0px;
 }
 }
 
@@ -74,12 +65,37 @@ h1.title {
 
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 812px) { 
+  and (max-device-width: 1024px) { 
     .product-list {
       padding: 0px 10px;
     }
 
 }
+
+
+@media only screen 
+  and (min-device-width: 1025px) 
+  and (max-device-width: 1300px) { 
+    .product-list {
+      padding: 0px 0px;
+      margin: 0px;
+    }
+
+    .item-container {
+    max-width: 1300px;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    text-align: left;
+
+    }
+
+    .container {
+      width: 1200px;
+    }
+
+}
+
 
 .product-container {
   margin: 0px;
@@ -129,13 +145,6 @@ span.number-of-products {
 }
 
 
-.h-divider {
-  background:#d9d9d9;
-  height: 1px;
-  width: 100%;
-  margin: 24px 12px;
-
-}
 
 
 
@@ -150,7 +159,6 @@ span.number-of-products {
   padding-bottom: 32px;
   padding-left: 12px;
   height: 80px;
-  background: yellow;
 
 }
 
@@ -159,12 +167,6 @@ span.number-of-products {
 
 
 
-
-
-
-.navbar-item {
-  height:48px;
-}
 
 
 

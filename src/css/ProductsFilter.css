@@ -1,5 +1,6 @@
  .level {
   padding: 64px 12px 0px 12px;
+  max-width: 1300px;
  }
 
 
@@ -62,7 +63,7 @@ button:focus {outline:0;}
       font-size:14px;
       color:#a3a3a3;
       letter-spacing:-0.15px;
-      padding: 6px 12px 12px 12px;
+      padding: 3px 6px 6px 6px;
       border: 1px;
     }
 

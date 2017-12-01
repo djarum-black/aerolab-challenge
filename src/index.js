@@ -1,3 +1,4 @@
+import 'bulma/css/bulma.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
@@ -5,6 +6,8 @@ import { Provider } from 'react-redux'
 import configureStore from './store/configureStore';
 import App from './App';
 import * as API from './actions/'
+
+
 
 
 

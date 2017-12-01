@@ -2,10 +2,10 @@ import  React, {  Component } from 'react';
 import { connect } from 'react-redux';
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import ProductsFilter from '../components/ProductsFilter'
-import Modal from '../components/Modal'
-import ListItem from '../components/ListItem'
-import * as API from '../actions/'
+import ProductsFilter from './components/ProductsFilter'
+import Modal from './components/Modal'
+import ListItem from './ListItem'
+import * as API from './actions/'
 
 
 
@@ -83,7 +83,7 @@ class ProductList extends Component {
 		else {
 
 		return (
-			<section className="product-list is-clearfix">
+			<section className="product-list">
 
 
 			
@@ -100,7 +100,6 @@ class ProductList extends Component {
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}>
 			
-			<div class="container item-container">
 			
 				{ 
 					paginatedProducts.map((value, index) => {
@@ -110,20 +109,14 @@ class ProductList extends Component {
 								)
 							})
 				}
-
-				</div>
 			     </ReactCSSTransitionGroup>
 			</div>
 
-				
-			
-
-
-				
-				<span className="is-clearfix"></span>
-				<Modal showModal={showModal} that={this} apiMessage={apiMessage} modalTitle={modalTitle} />
 				<ProductsFilter that={this} startingNumber={startingNumber} numberOfItems={numberOfItems}
-				page={page} totalNumOfItems={filteredProducts.length} showFilters={false}  />
+					page={page} totalNumOfItems={filteredProducts.length} showFilters={false} />
+			
+				<Modal showModal={showModal} that={this} apiMessage={apiMessage} modalTitle={modalTitle} />
+
 				<br/><br/><span onClick = {() => this.toggleTerminal() } > don't like images?</span>
 			</section>
 		)
